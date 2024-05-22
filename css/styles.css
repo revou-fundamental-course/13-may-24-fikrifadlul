@@ -6,3 +6,32 @@
     text-align: center;
     color: white;
 }
+.title-soal {
+    text-align: center;
+    font-weight: bold;
+}
+
+.image-soal {
+    width: 100%;
+    height: 100%;
+}
+
+.image-soal>img{
+    width: 100%;
+    min-height: 200px;
+}
+
+.box-soal {
+    min-height: 220px;
+}
+
+.btn-submite{
+    width: 50%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.btn-reset{
+    width: 50%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
