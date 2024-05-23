@@ -1,37 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 10px;
+}
+
 .title {
     background-color: blue;
 }
-.title > h1 {
+
+.title>h1 {
     padding: 20px 0 20px 0;
+    margin: 0;
     text-align: center;
     color: white;
 }
+
 .title-soal {
     text-align: center;
     font-weight: bold;
 }
 
 .image-soal {
-    width: 100%;
-    height: 100%;
 }
 
-.image-soal>img{
+.image-soal>img {
     width: 100%;
     min-height: 200px;
 }
 
 .box-soal {
+    text-align: center;
     min-height: 220px;
+    align-content: center;
+    box-shadow: 0px 0px 0.5px 0.5px #767676;
+    border-radius: 20px;
+    margin: 20px;
 }
 
-.btn-submite{
-    width: 50%;
-    margin-top: 10px;
-    margin-bottom: 20px;
+.btn {
+    background-color: #03a4f5;
+    border-radius: 5px;
+    border-color: #586d9c;
+    border-width: 1px;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: monospace;
+    color: white;
+    padding: 10px;
+    margin-left: 10px;
+    transform: all 0.3s ease;
+    text-align: center;
+    cursor: pointer;
 }
-.btn-reset{
-    width: 50%;
-    margin-top: 10px;
-    margin-bottom: 20px;
+
+.btn:nth-child(odd) {
+    background-color: #26bcbf;
+}
+
+.btn:nth-child(even) {
+    background-color: #004ae9;
+}
+
+.btn:hover {
+    background-color: #a2b8e8;
+    bottom: 5px;
+    transform: translateY(5px);
+}
+
+.button-group {
+    text-align: center;
 }
