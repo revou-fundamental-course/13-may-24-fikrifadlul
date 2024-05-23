@@ -6,6 +6,10 @@ body {
 
 .container {
     padding: 10px;
+    max-width: 600px;
+    margin: 50px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #959595;
 }
 
 .title {
@@ -24,21 +28,24 @@ body {
     font-weight: bold;
 }
 
-.image-soal {
-}
-
 .image-soal>img {
     width: 100%;
     min-height: 200px;
 }
 
 .box-soal {
-    text-align: center;
     min-height: 220px;
-    align-content: center;
     box-shadow: 0px 0px 0.5px 0.5px #767676;
     border-radius: 20px;
-    margin: 20px;
+    display: none;
+}
+
+.rumus {
+    background-color: #ececec;
+    padding: 5px 10px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 .btn {
@@ -73,4 +80,51 @@ body {
 
 .button-group {
     text-align: center;
+}
+
+div.form-group {
+    margin: auto;
+}
+
+.form-group .btn {
+    display: block;
+    margin: 10px auto 10px auto;
+    padding: 5px 0;
+    font-size: 14px;
+    font-weight: 400;
+    width: 100%;
+}
+
+.form-group .btn.btn-submite{
+    background-color: #004ae9;
+}
+
+.form-group .btn.btn-reset{
+    background-color: #ff9f39;
+}
+
+.form-group input {
+    padding: 10px;
+    margin: 10px auto;
+    width: 95%;
+    display: inline-block;
+    border-radius: 5px;
+    border-width: 1px;
+    box-sizing: content-box;
+}
+
+.form-group .form-control:hover {
+    border-color: #fffc4a;
+}
+
+.button-group.hr {
+    border-top: black;
+}
+
+#result {
+    display: none;
+    background-color: #41d2be;
+    padding: 5px 10px;
+    text-align: center;
+    margin-bottom: 10px;
 }
