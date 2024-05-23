@@ -6,7 +6,7 @@ let boxHasil = null;
 
 function showBox(params) {
     box = document.getElementById("box");
-    rumus = document.getElementsByClassName("rumus");
+    rumus = document.getElementsByClassName("rumus"); // element box rumus
     boxLuas = document.getElementById("boxLuas");
     boxKeliling = document.getElementById("boxKeliling");
     if (params == 1) {
@@ -36,30 +36,34 @@ function hitung() {
     boxHasil = document.getElementById("result");
     boxHasil.style.display = 'block';
     if (boxLuas.style.display == 'block') {
-        const alas = parseFloat(document.getElementById('inputAlas').value);
-        const tinggi = parseFloat(document.getElementById('inputTinggi').value);
+        // Box Luas
+        const alas = parseFloat(document.getElementById('inputAlas').value); // mengambil nilai alas dari inputan user
+        const tinggi = parseFloat(document.getElementById('inputTinggi').value); // mengambil nilai tinggi dari inputan user
         let hasil = 0;
 
         if (isNaN(alas) || isNaN(tinggi)) {
+            //jika nilai masih kosong
             alert('Harap semua nilai sisi diisi dengan angka yang valid.');
             boxHasil.style.display = 'none';
             return;
         } else {
-            hasil = 0.5 * alas * tinggi;
+            hasil = 0.5 * alas * tinggi; // Rumus Luas
             boxHasil.innerHTML = "<p>Luas segitiga dari alas <b>" + alas + "</b> dan tinggi <b>" + tinggi + "</b> adalah <b>" + hasil + "</b>.</p>";
         }
     } else if (boxKeliling.style.display == 'block') {
+        // Box Keliling
         const siA = parseFloat(document.getElementById('inputA').value);
         const siB = parseFloat(document.getElementById('inputB').value);
         const siC = parseFloat(document.getElementById('inputC').value);
         let hasil = 0;
         
         if (isNaN(siA) || isNaN(siB) || isNaN(siC)) {
+            //jika nilai masih kosong
             alert('Harap semua nilai sisi diisi dengan angka yang valid.');
             boxHasil.style.display = 'none';
             return;
         } else {
-            hasil = siA + siB + siC;
+            hasil = siA + siB + siC; // Rumus Keliling
             boxHasil.innerHTML = "<p>Keliling segitiga dari sisi A = <b>" + siA + "</b> dan sisi B = <b>" + siB + "</b> dan sisi C = <b>" + siC + "</b> adalah <b>" + hasil + "</b>.</p>";
         }
 
@@ -68,6 +72,7 @@ function hitung() {
 
 function resetArea() {
     let inputUser = document.getElementsByTagName("input");
+    // mengkosongkan nilai inputan user
     for (let i = 0; i < inputUser.length; i++) {
         inputUser[i].value = "";
     }

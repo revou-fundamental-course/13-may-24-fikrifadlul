@@ -28,12 +28,15 @@
             <p>Rumus Luas Segitiga : <b>L = 1/2 x a x t</b> </p>
         </div>
         <form class="form-group" action="javascript:void()">
+            <!-- Box Luas -->
             <div id="boxLuas" style="display: none;">
                 <label for="inputAlas">Atas (cm):</label>
                 <input type="number" id="inputAlas" placeholder="Alas">
                 <label for="inputTinggi">Tinggi (cm):</label>
                 <input type="number" id="inputTinggi" placeholder="Tinggi">
             </div>
+            <!-- End Box Luas -->
+            <!-- Box Keliling -->
             <div id="boxKeliling" style="display: none;">
                 <label for="inputA">Sisi A (cm):</label>
                 <input type="number" id="inputA" placeholder="Sisi A">
@@ -42,10 +45,14 @@
                 <label for="inputC">Sisi C (cm):</label>
                 <input type="number" id="inputC" placeholder="Sisi C">
             </div>
+            <!-- End Box Keliling -->
 
+            <!-- Box hasil dari perhitungan -->
             <div id="result">
             </div>
+            <!-- End Box Result -->
             <hr />
+            <!-- Button -->
             <div class="button-group">
                 <button type="button" class="btn btn-submite" id="btnHitung" onclick="hitung()">Hitung</button>
                 <button type="button" class="btn btn-reset" id="btnReset" onclick="resetArea()">Reset</button>
